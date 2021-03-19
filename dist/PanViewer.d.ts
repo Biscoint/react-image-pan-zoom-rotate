@@ -1,7 +1,7 @@
 declare type PanViewerProps = {
     image: string;
     alt?: string;
-    ref?: any;
+    passRef?: any;
 };
-declare const PanViewer: ({ image, alt, ref }: PanViewerProps) => JSX.Element;
+declare const PanViewer: ({ image, alt, passRef }: PanViewerProps) => JSX.Element;
 export default PanViewer;

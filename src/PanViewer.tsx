@@ -15,9 +15,9 @@ const Container = css`
 `;
 const ControlsContainer = styled.div`
   position: absolute;
-  right: 10px;
+  right: 0px;
   z-index: 2;
-  top: 10px;
+  top: 0px;
   user-select: none;
   border-radius: 2px;
   background: #fff;
