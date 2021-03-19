@@ -23,6 +23,7 @@ export interface IReactPanZoomProps {
     pandy?: number;
     rotation?: number;
     onPan?: (x: number, y: number) => void;
+    setZoom: (z: number) => void;
     onReset?: (dx: number, dy: number, zoom: number) => void;
     onClick?: (e: React.MouseEvent<any>) => void;
     style?: {};
@@ -55,7 +56,11 @@ export default class ReactPanZoom extends React.PureComponent<IReactPanZoomProps
     private panStart;
     private onMouseUp;
     private panEnd;
+    preventDefault(e: any): void;
     private onMouseMove;
+    private onWheel;
+    private onMouseEnter;
+    private onMouseLeave;
     private updateMousePosition;
     private getNewMatrixData;
 }
